@@ -8,6 +8,7 @@ int main()
 
     int arr[n];
 
+    printf("\n");
     for(i=0; i<n; i++)
     {
         printf("Enter the element number %d: ", i+1);
@@ -17,7 +18,7 @@ int main()
     printf("\nEnter the position to insert: ");
     scanf("%d", &pos);
 
-    printf("Enter the value: ");
+    printf("\nEnter the value: ");
     scanf("%d", &value);
 
     if(pos>=n)
@@ -33,7 +34,7 @@ int main()
         arr[i]=value;
     }
 
-    printf("Final Result: ");
+    printf("\nFinal Result: ");
     for(i=0; i<=n; i++)
     {
         printf("%d ", arr[i]);

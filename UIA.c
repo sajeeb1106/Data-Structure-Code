@@ -1,5 +1,4 @@
 #include<stdio.h>
-
 int main()
 {
     int i, pos, n, value;
@@ -9,32 +8,40 @@ int main()
 
     int arr[n];
 
-    for(i = 0; i < n; i++)
+    printf("\n");
+    for(i=0; i<n; i++)
     {
-        printf("Enter the element number %d(Index number %d): ", i + 1, i);
+        printf("Enter the element number %d: ", i+1);
         scanf("%d", &arr[i]);
     }
 
-    printf("\nEnter the position to update: ");
+    printf("\n");
+    printf("Enter the position to update: ");
     scanf("%d", &pos);
 
-    printf("Enter updated value: ");
-    scanf("%d", &value);
-
-    if(pos > n || pos < 1)
+    if(pos>=n)
     {
-        printf("Update is not possible.\n");
-    }
-    else
-    {
-        arr[pos] = value;
-
-        printf("Final Result: ");
-        for(i = 0; i < n; i++)
+        printf("Update is not posssible.\n");
+        printf("The Numbers are: ");
+        for(i=0; i<n; i++)
         {
             printf("%d ", arr[i]);
         }
     }
+    else
+    {
+        printf("\n");
+        printf("Enter the updated value: ");
+        scanf("%d", &value);
 
+        arr[pos]=value;
+
+        printf("\n");
+        printf("Final Result: ");
+        for(i=0; i<n; i++)
+        {
+           printf("%d ", arr[i]);
+        }
+    }
     return 0;
 }

@@ -8,6 +8,7 @@ int main()
 
     int arr[n];
 
+    printf("\n");
     for(i=0; i<n; i++)
     {
         printf("Enter the element number %d(Index number %d): ", i+1, i);
@@ -29,7 +30,7 @@ int main()
         }
         n=n-1;
 
-        printf("Final Result= ");
+        printf("\nFinal Result= ");
         for(i=0; i<n; i++)
         {
             printf("%d ", arr[i]);

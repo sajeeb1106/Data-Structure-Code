@@ -7,14 +7,14 @@ int main()
     scanf("%d", &m);
 
     int arr1[m];
-
+    
     for (i = 0; i < m; i++)
     {
         printf("Enter the element %d: ", i + 1);
         scanf("%d", &arr1[i]);
     }
 
-    printf("Enter the size of the second array: ");
+    printf("\nEnter the size of the second array: ");
     scanf("%d", &n);
 
     int arr2[n];
