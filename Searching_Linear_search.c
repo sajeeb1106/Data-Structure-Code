@@ -22,19 +22,13 @@ int main()
     {
         if(arr[i] == search)
         {
+            printf("Element %d found in the array.\n", search);
             found = 1;
-            break;
         }
     }
-
-    if(found)
-    {
-        printf("Element %d found in the array.\n", search);
-    }
-    else
-    {
-        printf("Element %d not found in the array.\n", search);
-    }
-
+    if(found == 0)
+        {
+            printf("Element %d not found in the array.\n", search);
+        }
     return 0;
 }

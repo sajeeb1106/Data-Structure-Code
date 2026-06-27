@@ -12,18 +12,18 @@ int main()
     }
     else
     {
-         int arr[n], arr2[n], arr3[n];
-         int j=-1, k=-1, even=0, odd=0;
+        int arr[n], arr2[n], arr3[n];
+        int j=-1, k=-1, even=0, odd=0;
 
-         printf("\n");
-         for (int i = 0; i < n; i++)
-         {
+        printf("\n");
+        for (int i = 0; i < n; i++)
+        {
             printf("Enter the element %d: ", i + 1);
             scanf("%d", &arr[i]);
-         } 
+        } 
          
-         for (int i = 0; i < n; i++)
-         {
+        for (int i = 0; i < n; i++)
+        {
             if (arr[i] % 2 == 0)
             {
                 j=j+1;
@@ -36,7 +36,7 @@ int main()
                 arr3[k] = arr[i];
                 odd++;
             }
-         }
+        }
 
         printf("\nEven numbers in the array: ");
         for (int i = 0; i < even; i++)
@@ -51,6 +51,5 @@ int main()
         }
         
     }
-
     return 0;
 }
